@@ -21,7 +21,6 @@ end
   end
   
   get '/multiply/:num1/:num2'
-    @num1 = params[:num1].to_i 
-    @num2 = params[:num2].to_i 
-    "#{@num1 * @num2}"
+    @product = params[:num_1].to_i * params[:num_2].to_i
+    "#{@product}"
   end
