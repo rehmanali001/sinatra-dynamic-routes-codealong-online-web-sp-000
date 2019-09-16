@@ -2,7 +2,7 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
 
-end
+
   # This is a sample static route.
   get '/hello' do
     "Hello World!"
@@ -24,3 +24,4 @@ end
     @product = params[:num_1].to_i * params[:num_2].to_i
     "#{@product}"
   end
+end
